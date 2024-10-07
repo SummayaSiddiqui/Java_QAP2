@@ -38,21 +38,21 @@ public class MyPoint {
     }
 
     public double distance(int x, int y) {
-        int xTerm = (this.x - x);
-        int yTerm = this.y - y;
-        return (Math.sqrt(Math.pow(xTerm, 2)) + (Math.pow(yTerm, 2)));
-    }
+    int xTerm = (this.x - x);
+    int yTerm = (this.y - y);
+    return Math.sqrt(Math.pow(xTerm, 2) + Math.pow(yTerm, 2));  // Correct formula
+}
 
     public double distance(MyPoint object) {
         int xTerm = (this.x - object.x);
         int yTerm = this.y - object.y;
-        return (Math.sqrt(Math.pow(xTerm, 2)) + (Math.pow(yTerm, 2)));
+        return Math.sqrt(Math.pow(xTerm, 2) + Math.pow(yTerm, 2));
     }
 
     public double distance() {
         int xTerm = (this.x - x);
         int yTerm = this.y - y;
-        return (Math.sqrt(Math.pow(xTerm, 2)) + (Math.pow(yTerm, 2)));
+        return Math.sqrt(Math.pow(xTerm, 2) + Math.pow(yTerm, 2));
     }
     
 }
