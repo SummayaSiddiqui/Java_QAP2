@@ -34,6 +34,7 @@ public class CreditCardDemo {
         System.out.println("Attempt to charge " + FOURTH_AMOUNT);
         visa.charge(FOURTH_AMOUNT);
         System.out.println("Balance: " + visa.getBalance());
+        System.out.println();
     }
 }
 
